@@ -26,7 +26,7 @@ int main() {
             std::cout << second[i] << ","; //returns [0,1,2,3,4,5,6,7,8,9]
         }
     }
-    std::cout << "]";
+    std::cout << "]" << std::endl;
 
     std::cout << std::endl;
     std::cout << "*****PART B*****" << std::endl;
@@ -41,8 +41,29 @@ int main() {
             std::cout << positive[i] << ","; //returns [1,2,3,4,6]
         }
     }
-    std::cout << "]";
+    std::cout << "]" << std::endl;
+    
     std::cout << std::endl;
+    std::cout << "*****PART C*****" << std::endl;
+    std::vector<int> third{1,2,3};
+    std::vector<int> fourth{4,5};
+    gogeta(third, fourth); //third is now [1,2,3,4,5] and fourth is empty.
+    std::cout << "[";
+    for(int i = 0; i < third.size(); i++) {
+        if(i == third.size() - 1) {
+            std::cout << third[i];
+        }
+        else {
+            std::cout << third[i] << ","; //returns [1,2,3,4,5]
+        }
+    }
+    std::cout << "]" << std::endl;
+
+    std::cout << "[";
+    for(int i = 0; i < fourth.size(); i++) {
+        std::cout << fourth[i] << std::endl; //doesn't return anything
+    }
+    std::cout << "]" << std::endl;
     
     return 0;
 }

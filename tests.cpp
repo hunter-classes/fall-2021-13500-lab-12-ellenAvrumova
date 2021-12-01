@@ -29,3 +29,23 @@ TEST_CASE("Part B") {
     std::vector<int> correctPos3{};
     CHECK(pos3 == correctPos3);
 }
+
+TEST_CASE("Part C") {
+    std::vector<int> first{3, 5, 10, 9, 7};
+    std::vector<int> second{8, 3, 5, 0, 1};
+    gogeta(first, second);
+    std::vector<int> correct{3, 5, 10, 9, 7, 8, 3, 5, 0, 1};
+    std::vector<int> empty{};
+    for(int i = 0; i < first.size(); i++) {
+        CHECK(first[i] == correct[i]);
+    }
+    CHECK(second == empty);
+
+    std::vector<int> third{};
+    std::vector<int> fourth{5, 2, 11, 10, 4, 8, 13};
+    std::vector<int> saved{};
+    saved = fourth;
+    gogeta(third, fourth);
+    CHECK(third == saved);
+    CHECK(fourth == empty);
+}
