@@ -3,15 +3,46 @@
 #include "funcs.h"
 
 int main() {
+    std::cout << "*****PART A*****" << std::endl;
     std::vector<int> first = makeVector(5);
     std::vector<int> second = makeVector(10);
+    std::cout << "[";
     for(int i = 0; i < first.size(); i++) {
-        std::cout << first[i] << std::endl;
+        if(i == first.size() - 1) {
+            std::cout << first[i];
+        }
+        else {
+            std::cout << first[i] << ","; //returns [0,1,2,3,4]
+        }
     }
+    std::cout << "]";
     std::cout << std::endl;
+    std::cout << "[";
     for(int i = 0; i < second.size(); i++) {
-        std::cout << second[i] << std::endl;
+        if(i == second.size() - 1) {
+            std::cout << second[i];
+        }
+        else {
+            std::cout << second[i] << ","; //returns [0,1,2,3,4,5,6,7,8,9]
+        }
     }
+    std::cout << "]";
 
+    std::cout << std::endl;
+    std::cout << "*****PART B*****" << std::endl;
+    std::vector<int> v{1,2,-1,3,4,-1,6};
+    std::vector<int> positive = goodVibes(v);
+    std::cout << "[";
+    for(int i = 0; i < positive.size(); i++) {
+        if(i == positive.size() - 1) {
+            std::cout << positive[i];
+        }
+        else {
+            std::cout << positive[i] << ","; //returns [1,2,3,4,6]
+        }
+    }
+    std::cout << "]";
+    std::cout << std::endl;
+    
     return 0;
 }
