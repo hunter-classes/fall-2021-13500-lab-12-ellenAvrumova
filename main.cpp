@@ -27,8 +27,8 @@ int main() {
         }
     }
     std::cout << "]" << std::endl;
-
     std::cout << std::endl;
+
     std::cout << "*****PART B*****" << std::endl;
     std::vector<int> v{1,2,-1,3,4,-1,6};
     std::vector<int> positive = goodVibes(v);
@@ -42,8 +42,8 @@ int main() {
         }
     }
     std::cout << "]" << std::endl;
-    
     std::cout << std::endl;
+
     std::cout << "*****PART C*****" << std::endl;
     std::vector<int> third{1,2,3};
     std::vector<int> fourth{4,5};
@@ -64,6 +64,23 @@ int main() {
         std::cout << fourth[i] << std::endl; //doesn't return anything
     }
     std::cout << "]" << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
     
+    std::cout << "*****PART D*****" << std::endl;
+    std::vector<int> fifth{1,2,3};
+    std::vector<int> sixth{4,5};
+    std::vector<int> sum = sumPairWise(fifth, sixth);
+    std::cout << "[";
+    for(int i = 0; i < sum.size(); i++) {
+        if(i == sum.size() - 1) {
+            std::cout << sum[i];
+        }
+        else {
+            std::cout << sum[i] << ","; // returns [5, 7, 3]
+        }
+    }
+    std::cout << "]" << std::endl;
+
     return 0;
 }

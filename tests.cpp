@@ -49,3 +49,29 @@ TEST_CASE("Part C") {
     CHECK(third == saved);
     CHECK(fourth == empty);
 }
+
+TEST_CASE("Part D") {
+    std::vector<int> fifth{10, 4, 9, 7, 3, 11};
+    std::vector<int> sixth{2, 3, 4, 8, 3, 10};
+    std::vector<int> sum1 = sumPairWise(fifth, sixth);
+    std::vector<int> correctSum1 = {12, 7, 13, 15, 6, 21};
+    for(int i = 0; i < sum1.size(); i++) {
+        CHECK(sum1[i] == correctSum1[i]);
+    }
+
+    std::vector<int> seventh{10, 4, 9, 7, 3, 11};
+    std::vector<int> eigth{2, 3, 4, 8};
+    std::vector<int> sum2 = sumPairWise(seventh, eigth);
+    std::vector<int> correctSum2 = {12, 7, 13, 15, 3, 11};
+    for(int i = 0; i < sum2.size(); i++) {
+        CHECK(sum2[i] == correctSum2[i]);
+    }
+
+    std::vector<int> ninth{10, 4, 9};
+    std::vector<int> tenth{2, 3, 4, 8, 3, 10};
+    std::vector<int> sum3 = sumPairWise(ninth, tenth);
+    std::vector<int> correctSum3 = {12, 7, 13, 8, 3, 10};
+    for(int i = 0; i < sum3.size(); i++) {
+        CHECK(sum3[i] == correctSum3[i]);
+    }
+}
