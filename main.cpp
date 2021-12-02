@@ -65,8 +65,7 @@ int main() {
     }
     std::cout << "]" << std::endl;
     std::cout << std::endl;
-    std::cout << std::endl;
-    
+
     std::cout << "*****PART D*****" << std::endl;
     std::vector<int> fifth{1,2,3};
     std::vector<int> sixth{4,5};
