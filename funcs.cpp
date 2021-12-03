@@ -1,3 +1,12 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 12
+ * This is file contains all the functions used in lab 12.
+ * The functions are called makeVector, goodVibes, gogeta, and sumPairWise
+*/
+
 #include <iostream>
 #include <vector>
 #include "funcs.h"

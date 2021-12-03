@@ -1,3 +1,12 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 12
+ * This is the main file that calls all the functions
+ * from funcs.cpp and uses funcs.h
+*/
+
 #include <iostream>
 #include <vector>
 #include "funcs.h"
