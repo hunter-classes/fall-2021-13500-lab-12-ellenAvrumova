@@ -1,3 +1,12 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 12
+ * This is the header file that has all the function prototypes
+ * of the functions in funcs.cpp.
+*/
+
 #pragma once
 #include <vector>
 
