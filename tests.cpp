@@ -1,3 +1,11 @@
+/**
+ * Author: Ellen Avrumova
+ * Course: CSCI-135
+ * Instructor: Tong Yi & Mike Zamansky
+ * Assignment: Lab 12
+ * This is file tests all the functions used in funcs.cpp.
+*/
+
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include <vector>
 #include "doctest.h"
